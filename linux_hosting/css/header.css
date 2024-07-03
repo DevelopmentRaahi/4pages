@@ -37,6 +37,9 @@
 :root {
   scroll-behavior: smooth;
 }
+*{
+  box-sizing: border-box;
+}
 
 /*--------------------------------------------------------------
 # General
@@ -45,6 +48,8 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   /* font-family: var(--default-font); */
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
   
 }
 
@@ -414,6 +419,12 @@ h6 {
         font-size: 16px;
     }
   }
+  @media (max-width: 767px) {
+    .header_top_para{
+        font-size: 14px;
+        padding: 1rem 0;
+    }
+  }
 /* ======== pre header section ======== */
 #pre-main_header{
  background-color: #d9edf7 ;
@@ -463,3 +474,78 @@ h6 {
     background-color:#f2f2f2b8;
     padding: 6px 0;
   }
+
+  
+
+
+  /* slider part  */
+.main_logo{
+  position: relative;
+}
+.logos{
+  padding: 2rem 0rem;
+  margin: 2rem 0rem;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgba(224, 248, 251, 0.43);
+}
+
+.logo-slide{
+display: inline-block; 
+white-space: nowrap;
+animation: slider 70s linear  infinite  ; 
+}
+
+.logo-slide img{
+display: inline-block;
+width: 10rem;
+height: auto;
+margin: 0 1rem;
+opacity: .9;
+}
+.logos::before, .logos::after{
+  content: " ";    
+  position: absolute;
+  top: 0;    
+  width: 10rem;
+  height: 100%;
+  z-index: 5;
+}
+.logos::before{
+  right: 0;
+  background-image:linear-gradient(to left, rgb(255, 255, 255),
+   rgba(255, 255, 255, 0));
+}
+.logos::after{
+  left: 0;
+  background-image:linear-gradient(to right, rgb(255, 255, 255),
+   rgba(255, 255, 255, 0));
+}
+.logos:hover .logo-slide{
+  animation-play-state: paused;
+  opacity: 1;    
+}
+
+@keyframes slider {
+  0%{
+      transform: translateX(10%);             
+  }    
+  100%{
+      transform: translateX(-90%);
+  }    
+}
+.section_cumtomer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.hr_section{
+width: 7%;
+color: rgb(39, 38, 38);
+border: 1px solid rgb(39, 38, 38) ;
+border-radius: 5px;
+
+}
+
