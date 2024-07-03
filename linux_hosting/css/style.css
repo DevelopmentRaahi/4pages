@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;   
@@ -617,6 +622,7 @@ footer,.footer-section{
   opacity: 0.9;
   transition: all 0.5s;
   z-index: 300;
+  position: relative;
 }
 .whatsap_button:hover {
   opacity: 1;
