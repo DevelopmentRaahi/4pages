@@ -1,8 +1,5 @@
-@import url("../_carrier.scss");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 *,
 *::after,
 *::before {
@@ -25,25 +22,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-html {
-  font-size: 10px;
-  text-align: left;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 .btn-design {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.288);
 }
 
 .background_random {
-  background: linear-gradient(to right, rgb(25, 26, 52), rgba(0, 0, 0, 0.66)), url(../img/window-vps-hosting/bg.jpg);
+  background: linear-gradient(to right, rgb(25, 26, 52), rgba(0, 0, 0, 0.66));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -518,9 +502,10 @@ body {
 }
 .popular-main .main_box .heading-one {
   display: block;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #50205c;
+  font-family: "Poppins", sans-serif;
 }
 .popular-main .main_box .heading-one img {
   height: 3rem;
@@ -529,7 +514,7 @@ body {
   display: block;
   opacity: 0.7;
   transition: all 0.5s linear;
-  animation: motionUp 1s ease-in 1s infinite;
+  animation: motionUp 1s ease-in 0.6s 3;
 }
 .popular-main .main_box .heading-one img:hover {
   opacity: 1;
@@ -550,8 +535,9 @@ body {
   }
 }
 .popular-main .main_box p {
-  font-size: 1.4rem;
-  line-height: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -723,7 +709,7 @@ body {
 .price_end h4 {
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: rgb(47, 78, 126);
 }
 .price_end > * {
